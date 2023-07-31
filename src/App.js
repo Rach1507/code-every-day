@@ -13,6 +13,29 @@ export default function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
+      <p>
+        Sharing State Between Components Sometimes, you want the state of two
+        components to always change together. To do it, remove state from both
+        of them, move it to their closest common parent, and then pass it down
+        to them via props. This is known as lifting state up
+      </p>
+      <p>
+        To coordinate these two panels, you need to “lift their state up” to a
+        parent component in three steps: Remove state from the child components.
+        Pass hardcoded data from the common parent. Add state to the common
+        parent and pass it down together with the event handlers.
+      </p>
+
+      <p>
+        "
+        <Panel isActive={activeIndex === 0} onShow={() => setActiveIndex(0)}>
+          ...
+        </Panel>
+        <Panel isActive={activeIndex === 1} onShow={() => setActiveIndex(1)}>
+          ...
+        </Panel>
+        "
+      </p>
       <h2>Almaty, Kazakhstan</h2>
       <Panel
         title="About"
