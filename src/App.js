@@ -1,9 +1,12 @@
 import React from "react";
-import  Accordian  from "./LiftingStateUp";
+// import Accordian from "./LiftingStateUp";
+import TableSearchable from "./TableSearchable";
 
-
-function App() {
-    return (
-     <Accordian/>
-    );
-  }
+export default function App() {
+  return (
+    <div>
+      {/* <Accordian /> */}
+      <TableSearchable />
+    </div>
+  );
+}
