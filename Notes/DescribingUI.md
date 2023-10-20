@@ -82,3 +82,50 @@ However, props are immutable—a term from computer science meaning “unchangea
 
 
 In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators.
+In React, you control branching logic with JavaScript.
+You can return a JSX expression conditionally with an if statement.
+You can conditionally save some JSX to a variable and then include it inside other JSX by using the curly braces.
+In JSX, {cond ? <A /> : <B />} means “if cond, render <A />, otherwise <B />”.
+In JSX, {cond && <A />} means “if cond, render <A />, otherwise nothing”.
+The shortcuts are common, but you don’t have to use them if you prefer plain if.
+
+
+
+Pitfall
+Don’t put numbers on the left side of &&.
+
+To test the condition, JavaScript converts the left side to a boolean automatically. However, if the left side is 0, then the whole expression gets that value (0), and React will happily render 0 rather than nothing.
+
+For example, a common mistake is to write code like messageCount && <p>New messages</p>. It’s easy to assume that it renders nothing when messageCount is 0, but it really renders the 0 itself!
+
+To fix it, make the left side a boolean: messageCount > 0 && <p>New messages</p>
+
+
+<h2>Rendering lists </h2>
+
+Arrow functions implicitly return the expression right after =>, so you didn’t need a return statement:
+Arrow functions containing => { are said to have a “block body”. They let you write more than a single line of code, but you have to write a return statement yourself. If you forget it, nothing gets returned
+
+Keys tell React which array item each component corresponds to, so that it can match them up later. 
+This becomes important if your array items can move (e.g. due to sorting), get inserted, or get deleted. A well-chosen key helps React infer what exactly has happened, and make the correct updates to the DOM tre
+
+![Alt text](image-1.png)
+
+
+ Where to get your key 
+
+Different sources of data provide different sources of keys:
+
+Data from a database: database keys/IDs, which are unique by nature.
+Locally generated data: I use an incrementing counter, crypto.randomUUID() or a package like uuid when creating items.
+
+Rules of keys 
+Keys must be unique among siblings. However, it’s okay to use the same keys for JSX nodes in different arrays.
+Keys must not change . Don’t generate them while rendering.
+
+Why does React need keys? 
+
+
+They let us uniquely identify an item between its siblings. A well-chosen key provides more information than the position within the array. Even if the position changes due to reordering, the key lets React identify the item throughout its lifetime.
+
+![Alt text](image-2.png)
