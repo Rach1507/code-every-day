@@ -25,6 +25,7 @@ border box ;
 
 margin box: Properties such as outline and box-shadow occupy this space too because they are painted on top, so they don't affect the size of our box
 
+if box-sizing: border-box - width will be applied to border box 
 
 
 user agent stylesheet  - Every browser applies a user agent stylesheet to HTML documents. They define how elements should look and behave if there's no CSS defined.
