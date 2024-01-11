@@ -50,10 +50,22 @@ STeps
  ![Alt text](image-13.png)
 
  When developing a component:
+
+
 Identify all its visual states.
 Determine the human and computer triggers for state changes.
 Model the state with useState.
 Remove non-essential state to avoid bugs and paradoxes.
+
+    Here are some questions you can ask about your state variables:
+
+    Does this state cause a paradox? 
+        For example, isTyping and isSubmitting can’t both be true. A paradox usually means that the state is not constrained enough. There are four possible combinations of two booleans, but only three correspond to valid states. To remove the “impossible” state, you can combine these into a status that must be one of three values: 'typing', 'submitting', or 'success'.
+
+    Is the same information available in another state variable already? 
+    Can you get the same information from the inverse of another state variable?
+
+
 Connect the event handlers to set state.
 
 
