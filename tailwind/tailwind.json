@@ -1,0 +1,19 @@
+{
+    "title": "Tailwind",
+    "desc": "",
+    "date": "",
+    "dates read ": "",
+    "text": {
+        "what is tailwind": "its a utility-first CSS framework\n -has a lot of utility classes that can be applied on markup / html elements to make custom designs/ components - utitlity classes can combine and applied also",
+        "what are utiltiy classes": "css classes with single-purpose, meaning they perform one specific task, such as adding padding (p-8)or setting a background color (bg-white)",
+        "benefits over traditional vanilla css or scss ": "Faster Development \n Concise \n Less CSS code  \nEasy maintainence : - see code on html, heirarchy , whats overiding , its easier to work with , to update /debug ",
+        "why is it helpful ": "More flexibility - over premade UI components from library \n Constraint based -  ",
+        "other alternatives to tialwind": "?????????????????? Spectre.css , Windi CSS  , Tachyons",
+        "features": {
+            "Constraint-based": ["utility classes to build custom designs without writing CSS","You aren’t wasting energy inventing class names- no overlapping names ","Your CSS stops growing","Making changes feels safer.- CSS is Global , but classes are local "]
+        },
+        "inline Vs utility classes": {
+            "benefits of utility classes" : ["consistency - utility from design system ","focus , hover - cant be done in ","responsive - media quesies cant be applied inline",""]
+        }
+    }
+}
