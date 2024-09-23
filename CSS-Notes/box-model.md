@@ -1,15 +1,20 @@
 
 
-everything in css is a box
+# everything in css is a box
 
-intrinsic sizing vs extrinsic 
+## whats effects the box ? 
+- " display " value 
+- content 
+- set dimensions (width height)
 
-extrinsic - specify the width / height 
+## intrinsic sizing vs extrinsic 
+
+extrinsic 
+- specify the width / height ( width: 400px)
 
 intrinsic 
-        - default 
-        - dont specify any size 
-        - width : min-content
+- default if we dont specify any width 
+- width : min-content
 
 
 box model - 
@@ -38,7 +43,6 @@ some defaults :
 block
 inline
 inline-block
-
 
 An inline element has block margin, but other elements won't respect it.
 Use inline-block, and those elements will respect the block margin
