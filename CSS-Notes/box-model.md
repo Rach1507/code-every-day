@@ -4,7 +4,7 @@
 
 ## whats effects the box ? 
 - " display " value 
-- content 
+- content inside 
 - set dimensions (width height)
 
 ## intrinsic sizing vs extrinsic 
