@@ -1,0 +1,6 @@
+{
+    "cherry-pick":{
+       " when to use ": "when i need to pull changes of 1 commit of branch A  on new branch B . not have any other changes of branch A .",
+       "syntax":"git checkout branch-B , git cherry-pick <commit-hash> ,  git push "
+    }
+}

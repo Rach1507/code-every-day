@@ -1,0 +1,1 @@
+{"eslint config changes to ignore cypress/unsafe-to-chain-command" : "\"@typescript-eslint/no-var-requires\": \"off"}
