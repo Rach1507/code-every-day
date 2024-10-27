@@ -16,7 +16,6 @@ intrinsic
 - default if we dont specify any width 
 - width : min-content
 
-
 box model - 
 
 content box 

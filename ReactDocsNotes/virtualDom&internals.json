@@ -1,0 +1,19 @@
+{
+    " Virtual dom": [
+        "Virtual Dom is a virtual representation. Of the actual dom.",
+        " It is kept in sync with the actual dom Buy libraries such as React Dom This process is called reconciliation"
+    ],
+    "Reconciliation": "The process of syncing. Virtual dom with  Actual dom. by reactDom library",
+    "implementation": "It is more of a concept. Or technology. It is implemented using It is mostly based on react elements And kind of objects called fibers. Which has information on Elements react elements more information on the reactor elements in the dorm tree.",
+    "React fiber": "It is a reconciliation engine. Present from react 16. ",
+    "purpose ":["enables the declarative API of React,"," You tell React what state you want the UI to be in, and it makes sure the DOM matches that state","This abstracts out the attribute manipulation, event handling, and manual DOM updating that you would otherwise have to use to build your app."],
+    "Was it invented by react? ": " The virtual dom Is not a concept Of react It was present before react ,but  implemented by react And it's own way ",
+    "Shadow dom Versus Virtual dom": {
+        "Shadow Dom ": [
+            " Shadow dom is a browser Technology",
+            "That is developed for Scoping variables. And browser default css.",
+            "It is usually hidden. But  Can be seen if enabled In developer Docs"
+        ],
+        "Virtual dom.": "Is Implemented  on top of browser apis. By javascript libraries . Such as react."
+    }
+}

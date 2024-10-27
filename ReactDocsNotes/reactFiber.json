@@ -1,0 +1,10 @@
+{
+    "Reconciliation algo , React fiber ":"",
+    "main feature":"incremental rendering",
+    "":"",
+    "what is a virtual dom":" representation of actual dom - like react element - obj ",
+    "diff algorithm":"compares 2 virtual DOms - pre rendering and post rendering - if it finds a diff then only it renders",
+    "why virtual dom is needed":"way of optimization: actual dom operations are costly  ",
+    "":""
+
+}
