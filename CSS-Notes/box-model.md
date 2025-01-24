@@ -20,7 +20,7 @@ box model -
 
 content box 
 
-![Alt text](image.png)
+![MOBPC mobile and pc ](image.png)
 
 padding box : If our box has overflow rules set, such as overflow: auto or overflow: scroll, the scrollbars will occupy this space too.
 

@@ -46,9 +46,11 @@ The fit-content(size) function
 
 The fr unit 
 
--just like % , em , rem , there is fr - it works only in grid
--similar to flex:auto
--can be combined with a fixed size gap or fixed size tracks ex: grid-template-columns: 200px 1fr.
+- just like % , em , rem , there is fr - it works only in grid
+- similar to flex:auto
+- It distributes space after the items have been laid out.
+- Therefore to have three columns which all get the same share of available space:
+- can be combined with a fixed size gap or fixed size tracks ex: grid-template-columns: 200px 1fr.
 
 
 The minmax() function #
